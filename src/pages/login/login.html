@@ -7,16 +7,19 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>Iniciar sesión</ion-title>
+    <ion-title color="secondary" class="centrado">BIENVENIDOS</ion-title>
   </ion-navbar>
 
 </ion-header>
 
 
-<ion-content>
+<ion-content padding id="Bienvenidos">
+
+  
+
   <ion-list>
     <form [formGroup]="formSesion">
-      <ion-item>
+      <ion-item color="danger">
         <ion-label floating>Usuario</ion-label>
         <ion-select value="" formControlName="usuario_id"  [(ngModel)]="idUser">
           <ion-option *ngFor="let u of usuarios" value="{{u.id}}">
@@ -25,14 +28,15 @@
         </ion-select>
       </ion-item>
 
-      <ion-item>
+      <ion-item color="danger">
         <ion-label floating>Contraseña</ion-label>
         <ion-input type="password" formControlName="clave" value="" [(ngModel)]="passUser"></ion-input>
       </ion-item>
 
-      <ion-item>
-        <button (click)="guardarUsuario()" color="black" ion-button block>Ingresar</button>
-        <button (click)="devuelveUsuario()" ion-button block>Cargar</button>
+      <ion-item color="danger">
+        <button  (click)="guardarUsuario()" color="botones" ion-button full>Entrar</button>
+        <button  (click)="devuelveUsuario()"  color="botones"ion-button full >Cargar</button>
+       
       </ion-item>
 
 

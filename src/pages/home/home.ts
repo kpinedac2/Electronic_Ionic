@@ -94,8 +94,8 @@ export class HomePage {
     //console.log(this.idU);
     this.ventaProvdier.ventaTotal(id).subscribe(data => {
       this.totales = data;
-      console.log(this.totales.ventaTotal);
-      this.totalVenta = this.totales.ventaTotal;
+      console.log(this.totales.total);
+      this.totalVenta = this.totales.total;
 
     }, error => {
       console.log(error);

@@ -7,13 +7,32 @@
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
+<ion-content padding id="contenedor">
 
-  <ion-list>
+ <!--  <ion-list>
     <ion-item>
       <label>Total de ventas: Q{{totalVenta}}</label><br>
       <label>Total de comisiones: Q{{totalComision}}</label>
     </ion-item>
-  </ion-list>
+  </ion-list> -->
+
+
+  <ion-card>
+      <ion-card-header class="centrado">
+       <h1 class="centrado">TOTAL VENTAS</h1> 
+      </ion-card-header>
+      <ion-card-content>
+          <label class="centrado">    Total de ventas: Q{{totalVenta}}</label><br>
+      </ion-card-content>
+    </ion-card>
+
+    <ion-card>
+        <ion-card-header class="centrado">
+         <h1 class="centrado">TOTAL COMISIONES</h1> 
+        </ion-card-header>
+        <ion-card-content>
+            <label class="centrado">   Total de comisiones: Q{{totalComision}}</label>
+        </ion-card-content>
+      </ion-card>
 
 </ion-content>

@@ -1,13 +1,13 @@
 <ion-menu [content]="content">
-  <ion-header>
+  <ion-header color="black">
     <ion-toolbar>
       <ion-title>CONTENIDO</ion-title>
     </ion-toolbar>
   </ion-header>
 
-  <ion-content>
-    <ion-list>
-      <button menuClose ion-item *ngFor="let p of pages" (click)="openPage(p)">
+  <ion-content padding id="app">
+    <ion-list >
+      <button menuClose ion-item *ngFor="let p of pages" (click)="openPage(p)" color="black">
         {{p.title}}
       </button>
     </ion-list>

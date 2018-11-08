@@ -1,5 +1,5 @@
 export interface VentaTotal{
-    _id? : string,
-    ventaTotal : number,
+    id? : string,
+    total : number,
     nombres :  string
 }
